@@ -7,11 +7,9 @@ COPY / .
 # Install app dependencies
 RUN npm install
 
-# Bundle your app source code into the container
-COPY . .
 
 # Expose the port your app runs on
-EXPOSE 3000
+EXPOSE 80
 
 # Define the command to run your application
 CMD ["node", "server.js"]
