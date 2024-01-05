@@ -4,6 +4,6 @@ steps:
   args: ['build','-t','us-central1.docker.pkg.dev/gcpproject-410115/noderepository/noderepository:v1','.']
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push','us-central1-docker.pkg.dev/${PROJECT_ID}/my-docker-repo/myimage']
+  args: ['push','us-central1.docker.pkg.dev/gcpproject-410115/noderepository/noderepository:v1']
 images:
 - "us-central1.docker.pkg.dev/gcpproject-410115/noderepository/noderepository:v1"
