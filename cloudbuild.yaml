@@ -2,5 +2,8 @@ steps:
   # Install dependencies and build Node.js application
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build','-t','us-central1.docker.pkg.dev/gcpproject-410115/noderepository/noderepository:v1','.']
+
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push','us-central1-docker.pkg.dev/${PROJECT_ID}/my-docker-repo/myimage']
 images:
 - "us-central1.docker.pkg.dev/gcpproject-410115/noderepository/noderepository:v1"
