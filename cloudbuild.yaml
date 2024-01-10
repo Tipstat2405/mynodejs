@@ -5,6 +5,6 @@ steps:
  - name: 'gcr.io/cloud-builders/docker'
    entrypoint: 'bash'
    args: ['-c', 'docker build -t vengal0235@gmail.com/myrepo/repo:v1 .']
-- name: 'gcr.io/cloud-builders/docker'
+ - name: 'gcr.io/cloud-builders/docker'
    entrypoint: 'bash'
    args: ['-c', 'docker push vengal0235@gmail.com/myrepo/repo:v1']
