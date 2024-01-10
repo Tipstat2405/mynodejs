@@ -4,4 +4,7 @@ steps:
    args: ['-c', 'docker login --username=vengal0235@gmail.com --password=Tipstat0160@']
  - name: 'gcr.io/cloud-builders/docker'
    entrypoint: 'bash'
-   args: ['-c', 'docker build -t gcpproject-410115/myrepo:v1 .']
+   args: ['-c', 'docker build -t vengal0235@gmail.com/myrepo/repo:v1 .']
+- name: 'gcr.io/cloud-builders/docker'
+   entrypoint: 'bash'
+   args: ['-c', 'docker pushvengal0235@gmail.com/myrepo/repo:v1']
