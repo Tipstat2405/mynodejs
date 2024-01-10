@@ -4,4 +4,4 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'push', 'us-east1-docker.pkg.dev/gcpproject-410115/myrepo/repo/v1']
 images:
-- ''us-east1-docker.pkg.dev/gcpproject-410115/myrepo/repo/v1'
+- 'us-east1-docker.pkg.dev/gcpproject-410115/myrepo/repo/v1'
