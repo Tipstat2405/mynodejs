@@ -5,5 +5,3 @@ steps:
  - name: 'gcr.io/cloud-builders/docker'
    entrypoint: 'bash'
    args: ['-c', 'docker build -t gcpproject-410115/myrepo:v1 .']
-images:
-- "us-east1.docker.pkg.dev/gcpproject-410115/myrepo/myrepo:v1"
