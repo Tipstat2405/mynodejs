@@ -1,5 +1,7 @@
 steps:
   # Install dependencies and build Node.js application
+- name: 'gcr.io/cloud-builders/mvn'
+  args: ['install']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build','-t','us-east1.docker.pkg.dev/gcpproject-410115/myrepo/myrepo:v1','.']
 images:
