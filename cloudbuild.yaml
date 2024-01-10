@@ -1,7 +1,7 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'gcr.io/gcpproject-410115/gcr.io/myrepo/v1', '.' ]
+  args: [ 'build', '-t', 'us-east1-docker.pkg.dev/gcpproject-410115/myrepo/repo/v1', '.' ]
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'push', 'gcr.io/gcpproject-410115/gcr.io/myrepo/v1']
+  args: [ 'push', 'us-east1-docker.pkg.dev/gcpproject-410115/myrepo/repo/v1']
 images:
-- 'gcr.io/gcpproject-410115/gcr.io/myrepo/v1'
+- ''us-east1-docker.pkg.dev/gcpproject-410115/myrepo/repo/v1'
